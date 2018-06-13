@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    margin-top: 10%;
+}
+
+.back {
+    position: relative;
+    max-width: 800px;
+    height: 600px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+    background-image: url("../img/layer-2.png");
+    overflow: hidden;
+}
+
+.back img {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.6;
+}
+
+.back .payment {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 336px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.back .payment .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 45px;
+    background-color: #f8edaf;
+}
+
+.back .payment .top .left h3 {
+    margin: 0;
+    color: #6e7f7b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.back .payment .top .left p {
+    margin: 0;
+    color: #a6a28d;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.back .payment .top .right p {
+    margin: 0;
+    color: #637570;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    line-height: 36px;
+}
+
+.back .payment .etc {
+    position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.etc form label {
+    display: block;
+    width: 100%;
+    color: #9eabad;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.etc form input {
+    width: 100%;
+    padding-left: 9px;
+    margin-bottom: 28px;
+    height: 44px;
+    border: 2px solid #bac8cb;
+    background-color: #fff;
+    color: #727f82;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.etc form select {
+    height: 44px;
+    padding-left: 9px;
+    margin-bottom: 28px;
+    border: 2px solid #bac8cb;
+    background-color: #fff;
+    color: #727f82;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.etc form .one {
+    float: left;
+    width: 61%;
+}
+
+.etc form .two {
+    float: right;
+    width: 33%;
+}
+
+.etc form .three {
+    float: left;
+    width: 33%;
+}
+
+.etc form p {
+    margin: 15px 0 0;
+    float: right;
+    color: #9eabad;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a {
+    color: #9eabad;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.etc img {
+    position: absolute;
+    top: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 288px;
+    height: 1px;
+    background-color: #edf0f1;
+}
+
+.etc button {
+    margin-bottom: 22px;
+    margin-top: 30px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: #25b86a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.etc .cancel {
+    display: block;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+input:hover,
+select:hover {
+    border: 2px solid #82d4e7;
+}

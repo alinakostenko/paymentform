@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paymentform</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="back">
+        <img src="img/unsplash1.png">
+        <div class="payment">
+            <div class="top">
+                <div class="left">
+                    <h3>Harold Finch</h3>
+                    <p>Your Total</p>
+                </div>
+                <div class="right">
+                    <p>$88</p>
+                </div>
+            </div>
+            <div class="etc">
+                <form class="clearfix">
+                    <label for="number">Credit card number</label>
+                        <input id="number" type="text" placeholder="4321">
+                    <label for="date">Expiration date</label>
+                    <select id="date" class="one">
+                        <option value="" disabled selected>Month</option>
+                    </select>
+                    <label>
+                        <select class="two">
+                            <option value="" disabled selected>Year</option>
+                        </select>
+                    </label>
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" class="three" type="text">
+                    <p>3 or 4 digits - <a href="#">view example</a></p>
+                </form>
+                <img src="img/separator.png">
+                <button type="submit">Pay</button>
+                <a class="cancel" href="#">Cancel order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
