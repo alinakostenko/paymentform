@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix:after {
@@ -10,17 +12,15 @@
 }
 
 body {
-    margin-top: 10%;
+    padding-top: 2%;
 }
 
 .back {
     position: relative;
     max-width: 800px;
-    height: 600px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    height: 86vh;
     margin: 0 auto;
-    background-image: url("../img/layer-2.png");
+    background: url("../img/layer-2.png") no-repeat;
     overflow: hidden;
 }
 
@@ -34,14 +34,17 @@ body {
 
 .back .payment {
     position: absolute;
+    top: 35px;
     left: 0;
     right: 0;
+    bottom: 35px;
     max-width: 336px;
+    max-height: 532px;
     margin: 0 auto;
     background-color: #fff;
 }
 
-.back .payment .top {
+.payment-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,18 +52,18 @@ body {
     height: 70px;
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     background-color: #f8edaf;
 }
 
-.back .payment .top .left h3 {
+.payment-top-left h3 {
     margin: 0;
     color: #6e7f7b;
     font-size: 14px;
     font-weight: 700;
 }
 
-.back .payment .top .left p {
+.payment-top-left p {
     margin: 0;
     color: #a6a28d;
     font-size: 10px;
@@ -69,7 +72,7 @@ body {
     letter-spacing: 0.75px;
 }
 
-.back .payment .top .right p {
+.payment-top-right p {
     margin: 0;
     color: #637570;
     font-size: 36px;
@@ -78,14 +81,14 @@ body {
     line-height: 36px;
 }
 
-.back .payment .etc {
+.payment-main {
     position: relative;
     margin-left: 24px;
     margin-right: 24px;
 }
 
-.etc form label {
-    display: block;
+.payment-main form label {
+    display: inline-block;
     width: 100%;
     color: #9eabad;
     font-size: 13px;
@@ -93,7 +96,7 @@ body {
     margin-bottom: 9px;
 }
 
-.etc form input {
+.payment-main form input {
     width: 100%;
     padding-left: 9px;
     margin-bottom: 28px;
@@ -105,10 +108,10 @@ body {
     font-weight: 700;
 }
 
-.etc form select {
+.payment-main form select {
     height: 44px;
     padding-left: 9px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     border: 2px solid #bac8cb;
     background-color: #fff;
     color: #727f82;
@@ -116,22 +119,22 @@ body {
     font-weight: 700;
 }
 
-.etc form .one {
+.payment-main form #date {
     float: left;
     width: 61%;
 }
 
-.etc form .two {
+.payment-main form #year {
     float: right;
     width: 33%;
 }
 
-.etc form .three {
+.payment-main form #cvv {
     float: left;
     width: 33%;
 }
 
-.etc form p {
+.payment-main form p {
     margin: 15px 0 0;
     float: right;
     color: #9eabad;
@@ -145,9 +148,9 @@ a {
     font-weight: 400;
 }
 
-.etc img {
+.payment-main img {
     position: absolute;
-    top: 280px;
+    top: 295px;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -156,7 +159,7 @@ a {
     background-color: #edf0f1;
 }
 
-.etc button {
+.payment-main button {
     margin-bottom: 22px;
     margin-top: 30px;
     width: 100%;
@@ -168,10 +171,10 @@ a {
     font-weight: 700;
 }
 
-.etc .cancel {
+.payment-main .cancel {
     display: block;
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
 }
 
 input:hover,

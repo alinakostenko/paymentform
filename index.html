@@ -11,30 +11,28 @@
     <div class="back">
         <img src="img/unsplash1.png">
         <div class="payment">
-            <div class="top">
-                <div class="left">
+            <div class="payment-top">
+                <div class="payment-top-left">
                     <h3>Harold Finch</h3>
                     <p>Your Total</p>
                 </div>
-                <div class="right">
+                <div class="payment-top-right">
                     <p>$88</p>
                 </div>
             </div>
-            <div class="etc">
+            <div class="payment-main">
                 <form class="clearfix">
                     <label for="number">Credit card number</label>
                         <input id="number" type="text" placeholder="4321">
                     <label for="date">Expiration date</label>
-                    <select id="date" class="one">
-                        <option value="" disabled selected>Month</option>
-                    </select>
-                    <label>
-                        <select class="two">
+                        <select id="date">
+                            <option value="" disabled selected>Month</option>
+                        </select>
+                        <select id="year">
                             <option value="" disabled selected>Year</option>
                         </select>
-                    </label>
                     <label for="cvv">CVV</label>
-                    <input id="cvv" class="three" type="text">
+                        <input id="cvv" type="text">
                     <p>3 or 4 digits - <a href="#">view example</a></p>
                 </form>
                 <img src="img/separator.png">
